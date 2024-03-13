@@ -15,8 +15,8 @@ int findMax(int arr[], int size) {
     if(arr[i] > max)
       max = arr[i];
   return max;
-  
-  return 0; }
+
+}
 
 /*
 Ejercicio 2: Invertir un Arreglo
