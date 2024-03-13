@@ -251,3 +251,17 @@ Wed 13 Mar 2024 08:56:19 PM UTC:
  tests:  0|6
 total_score: 10/70
 e5e770e
+Wed 13 Mar 2024 09:11:12 PM UTC: 
+ exercises.c | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:32:1: error: expected expression before ‘}’ token
+   32 | }
+      | ^
+exercises.c:27:7: error: unused variable ‘max’ [-Werror=unused-variable]
+   27 |   int max = size - 1;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+240dc70
