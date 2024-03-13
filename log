@@ -1,1 +1,11 @@
 
+Wed 13 Mar 2024 08:54:41 PM UTC: 
+ exercises.c | 17 +++++++++++++++--
+ 1 file changed, 15 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:32:1: error: expected expression before ‘}’ token
+   32 | }
+      | ^
+Compilation failed
+bc68ea2
