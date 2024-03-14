@@ -285,3 +285,9 @@ exercises.c:27:7: error: unused variable ‘temp’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 cda226d
+Thu 14 Mar 2024 09:17:59 PM UTC: 
+ exercises.c | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+ tests:  0|6
+total_score: 10/70
+b2aef9b
