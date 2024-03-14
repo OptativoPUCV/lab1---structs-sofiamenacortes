@@ -36,9 +36,7 @@ void reverseArray(int arr[], int size) {
       fin--;
     }
 };
-
   
-
 /*
 Ejercicio 3: Filtrar Números Pares
 Descripción: Escribe una función que tome un arreglo de enteros
@@ -46,10 +44,40 @@ y su tamaño, y luego devuelva un nuevo arreglo que contenga solo
 los números pares del arreglo original.
 modificar nesize para modificar el tamaño del arreglo*/
 
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) 
+{
+  int cont = 0;
+  for (int i = 0; i < size; i++)
+  {
+    if(arr[i] % 2 == 0)
+    {
+      cont++;
+    }
+  }
 
+  int *nuevoArreglo = (int *) malloc(cont * sizeof(int));
+  if (nuevoArreglo == NULL)
+  {
+    newSize = 0;
+    return NULL;
+  }
 
+  int copiaNumero = 0;
+  for(int i = 0; i < size; i++)
+  {
+    if(arr[i] % 2 == 0)
+    {
+      nuevoArreglo[copiaNumero] = arr[i];
+      copiaNumero++;
+    }
+    
+  }
 
+  *newSize = cont;
+
+  return nuevoArreglo;
+  
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
