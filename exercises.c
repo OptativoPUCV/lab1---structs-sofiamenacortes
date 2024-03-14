@@ -24,7 +24,7 @@ Descripción: Escribe una función que tome un arreglo y su tamaño, y luego
 invierta el orden de sus elementos.
 */
 void reverseArray(int arr[], int size) {
-  int inicio = arr[0];
+  int inicio = 0;
   int fin = size - 1;
   while (inicio < fin)
     {
@@ -33,7 +33,7 @@ void reverseArray(int arr[], int size) {
       arr[fin] = temp;
 
       inicio++;
-      fin-- ;
+      fin--;
     }
 };
 
