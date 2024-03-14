@@ -271,3 +271,17 @@ Wed 13 Mar 2024 09:12:34 PM UTC:
  tests:  0|6
 total_score: 10/70
 956e07f
+Thu 14 Mar 2024 09:17:26 PM UTC: 
+ exercises.c | 12 +++++++++---
+ 1 file changed, 9 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:30:1: error: expected expression before ‘}’ token
+   30 | }
+      | ^
+exercises.c:27:7: error: unused variable ‘temp’ [-Werror=unused-variable]
+   27 |   int temp;
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+cda226d
